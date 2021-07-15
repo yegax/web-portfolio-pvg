@@ -3,3 +3,15 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.btns {
+    @apply font-bold py-4 px-5 rounded object-right;
+}
+
+.btns-gray {
+    @apply bg-gray-800 text-white;
+}
+
+.btns-gray:hover {
+    @apply bg-gray-700;
+}

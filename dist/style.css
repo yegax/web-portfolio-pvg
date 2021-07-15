@@ -582,6 +582,8 @@ video {
 
 .container {
   width: 100%;
+  padding-right: 7rem;
+  padding-left: 7rem;
 }
 
 @media (min-width: 640px) {
@@ -32220,9 +32222,34 @@ video {
   content: none;
 }
 
+.btns {
+  border-radius: 0.25rem;
+  -o-object-position: right;
+     object-position: right;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+.btns-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btns-gray:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
+    padding-right: 7rem;
+    padding-left: 7rem;
   }
 
   @media (min-width: 640px) {
@@ -63386,6 +63413,8 @@ video {
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
+    padding-right: 7rem;
+    padding-left: 7rem;
   }
 
   @media (min-width: 640px) {
@@ -94549,6 +94578,8 @@ video {
 @media (min-width: 1024px) {
   .lg\:container {
     width: 100%;
+    padding-right: 7rem;
+    padding-left: 7rem;
   }
 
   @media (min-width: 640px) {
@@ -125712,6 +125743,8 @@ video {
 @media (min-width: 1280px) {
   .xl\:container {
     width: 100%;
+    padding-right: 7rem;
+    padding-left: 7rem;
   }
 
   @media (min-width: 640px) {
@@ -156875,6 +156908,8 @@ video {
 @media (min-width: 1536px) {
   .\32xl\:container {
     width: 100%;
+    padding-right: 7rem;
+    padding-left: 7rem;
   }
 
   @media (min-width: 640px) {
