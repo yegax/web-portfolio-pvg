@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     colors: {
       'custom-orange': '#ffcc00'
@@ -10,7 +10,6 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
   },
   plugins: [],
 }
