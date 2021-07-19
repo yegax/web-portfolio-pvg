@@ -6,7 +6,7 @@ module.exports = {
       'custom-orange': '#ffcc00'
     },
     container: {
-      center: false,     
+      center: false,  
     }
   },
   variants: {
