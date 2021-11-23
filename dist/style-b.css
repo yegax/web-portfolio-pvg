@@ -31,6 +31,7 @@
   border-radius: 0 15px 15px 0;
   user-select: none;
   -webkit-user-select: none;
+  transition: 0.5s;
   
 }
 .next {
@@ -48,23 +49,27 @@
   border-radius: 15px 0 0 15px;
   user-select: none;
   -webkit-user-select: none;
+  transition: 0.5s;
 }
 
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover  {
   background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
 }
 
 .next:hover {
   background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 16px;
   padding: 25px 12px;
+  opacity: 0%;
   position: absolute;
   top: 0;
 }
@@ -80,8 +85,7 @@
 .row:after {
   content: "";
   display: table;
-  clear: both;
-  transition: width 2s;
+  clear: both;  
 }
 
 /* Six columns side by side */
@@ -93,9 +97,11 @@
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.3;
+  transition: 0.5s;
 }
 
 .active,
 .demo:hover {
   opacity: 0.7;
+  transition: 1s;
 }
