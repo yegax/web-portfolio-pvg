@@ -1,0 +1,94 @@
+.ignore-css {
+    all:unset;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+p {
+  text-shadow: 1px 1px 6px #000000;
+}
+
+li {
+  text-shadow: 1px 1px 6px #000000;
+}
+
+h1 {
+  text-shadow: 1px 1px 8px #000000;
+}
+
+.shadow-img {
+  box-shadow: 0px 2px 17px #000000;
+}
+
+img {
+
+}
+
+.dropdown-bar{
+    position: absolute;
+    z-index: 1px;
+    background-color: rgba(17, 24, 39);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    right: 0;
+    top: 45px;
+    z-index:20;
+    display: none;
+ 
+}
+.dropdown-bar-active{
+    visibility: block;
+    display:initial;
+    opacity: 100%;
+}
+
+.project-btn{
+    margin-top: 1px;
+    margin-bottom: 10px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(31, 41, 55, 1); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .img-a{
+    max-width: 30px;
+    min-width: 60px;
+    border-radius: 80px;
+    margin-right: 7px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+  }
+  .toggle-scroll{
+    height: 100%;
+    overflow: hidden;
+  }
+  .resume-hide{
+    visibility: hidden;
+  }
+  .dropdown-btn-active{
+    margin-right: 3px;
+    background-color: rgba(251, 191, 36);
+  }

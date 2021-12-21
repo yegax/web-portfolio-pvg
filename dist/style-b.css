@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
@@ -24,7 +25,7 @@
   top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  margin-top: -30px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -41,8 +42,8 @@
   top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
-  margin-right: 20px;
+  margin-top: -30px;
+  margin-right: 0PX;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -50,6 +51,10 @@
   user-select: none;
   -webkit-user-select: none;
   transition: 0.5s;
+}
+
+.mt-project {
+  margin-top: -890px;
 }
 
 
@@ -104,4 +109,9 @@
 .demo:hover {
   opacity: 0.7;
   transition: 1s;
+}
+
+.imga{
+  max-width: 50x;
+  min-width: 10px;
 }

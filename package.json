@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    // script command: npm run build:css 
+    // script command: npm run build:css
     "build:css": "tailwindcss build -i src/style.css -o dist/style.css"
   },
   "keywords": [],
@@ -17,11 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yegax/kampa-tw.git"
+    "url": "git+https://github.com/yegax/web-portfolio-pvg.git"
   },
   "bugs": {
-    "url": "https://github.com/yegax/kampa-tw/issues"
+    "url": "https://github.com/yegax/web-portfolio-pvg/issues"
   },
-  "homepage": "https://github.com/yegax/kampa-tw#readme",
+  "homepage": "https://github.com/yegax/web-portfolio-pvg#readme",
   "description": ""
 }
