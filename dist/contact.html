@@ -16,52 +16,59 @@
 <body class="bg-gray-900 flex flex-col h-screen">
 
     <header>
-    <div class="flex-row bg-gray-800 fixed top-0 inset-x-0  py-2.5 md:py-1 lg:py-1 px-2 shadow-lg"> 
-        <a class="bg-yellow-400 text-gray-800 font-bold py-2 px-3 rounded dark:bg-white cursor-default">Patricio Valdes Garcia</a>
-
-        <!-- Mobile Menu Button -->
-        <a id="dropdown-btn" class="bg-yellow-400 hover:bg-yellow-300 text-gray-800 cursor-pointer font-extrabold float-right block md:hidden lg:hidden py-2 px-3 -mt-1.5 rounded dark:bg-white cursor-default"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-        </a>
-
-        <!-- Mobile Menu -->
-        <div id="dropdown-bar" class="dropdown-bar">
-
+        <!-- Nav Bar -->
+        <nav>   
+        <div class="flex-row fixed top-0 inset-x-0 bg-gray-800 py-2.5 md:py-1 lg:py-1 px-2 shadow-lg">
+    
+            <div class="icon-bg float-left p-28 md:p-36 lg:md:p-36 xl:md:p-36 -mt-0.5 md:mt-0.5 lg:mt-0.5 xl:mt-0.5">
+            </div>
+            
+            <a class="icon-fade flex text-md md:text-xl bg-yellow-400 py-0.5 md:py-1 lg:py-1 xl:py-1 px-1 md:px-2.5 lg:px-2.5 xl:px-2.5 rounded dark:bg-white cursor-default">Patricio Valdes Garcia</a>
+    
+            <!-- Mobile Menu Button -->
+            <a id="dropdown-btn" class="bg-yellow-400 hover:bg-yellow-300 text-gray-800 cursor-pointer font-extrabold float-right block md:hidden lg:hidden py-2 px-3 -mt-0.5 rounded dark:bg-white cursor-default"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </a>
+    
+            <!-- Mobile Menu -->
+            <div id="dropdown-bar" class="dropdown-bar">
+    
+                <a href="index.html">
+                <h1 class="text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">             
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill inline-block -mr-2 -mt-2" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg> About</h1>
+                </a>
+    
+                <a href="contact.html">
+                <h1 class="text-xl bg-gray-700 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chat-square-dots-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg> Contact</h1>
+                </a>
+    
+                <a href="projects.html">
+                    <h1 class="text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-archive-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
+                        <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+                    </svg> Projects</h1>
+                </a>
+            </div>
+            
             <a href="index.html">
-            <h1 class="text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">             
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill inline-block -mr-2 -mt-2" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-              </svg> About</h1>
-            </a>
-
-            <a href="contact.html">
-            <h1 class="text-xl bg-gray-700 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chat-square-dots-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
-                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                </svg> Contact</h1>
-            </a>
-
-            <a href="projects.html">
-                <h1 class="text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-archive-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
-                    <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
-                </svg> Projects</h1>
-            </a>
-        </div>
-        
-        <a href="index.html">
-            <button class="bg-gray-800 hover:bg-gray-700 text-yellow-400 py-2 px-7 -mx-1 rounded hidden md:inline-block lg:inline-block xl:inline-block"> About
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-house-door-fill float-left mx-0.5 my-0.5" viewBox="0 0 16 16 transition-colors transition duration-500">
-                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-                </svg>
+            <button class="bg-gray-800 hover:bg-gray-700 text-yellow-400 padding-menu px-7 -mx-1 rounded hidden md:inline-block lg:inline-block xl:inline-block"> About
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house-fill  float-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg>
             </button>
             </a>
             
             <a href="">
-            <button href="#darkmode" class="bg-gray-800 hover:bg-gray-700 py-2 px-5 rounded float-right text-yellow-400 transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block"> 
+            <button href="#darkmode" class="bg-gray-800 hover:bg-gray-700 padding-menu px-5 rounded float-right text-yellow-400 transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
                     <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
                 </svg>
@@ -69,7 +76,7 @@
             </a>
     
             <a href="contact.html">
-            <button href="dist/contact.html" class="bg-gray-700 hover:bg-gray-700 text-yellow-400 py-2 px-5 rounded transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block">Contact 
+            <button href="dist/contact.html" class="bg-gray-700 hover:bg-gray-700 text-yellow-400 padding-menu px-5 rounded transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block">Contact 
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-chat-square-dots-fill float-left mx-1 my-1" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                 </svg>
@@ -77,15 +84,15 @@
             </a>
     
             <a href="projects.html">
-            <button href="#projects" class="bg-gray-800  hover:bg-gray-700 text-yellow-400 py-2 px-5 -mx-1.5 rounded transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block">Projects 
+            <button href="#projects" class="bg-gray-800  hover:bg-gray-700 text-yellow-400 padding-menu px-5 -mx-1.5 rounded transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block">Projects 
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-archive-fill float-left mx-1 my-0.5" viewBox="0 0 16 16">
                     <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
                 </svg>
             </button>
             </a>
-
-    </div>
-</header>
+        </div>
+        </nav>
+        </header>
 <main>
     <div class="flex">
         <div class="flex-col md:flex-auto sm:flex-1 py-5 px-5 text-white mx-0 sm:mx-0 md:mx-0 lg:mx-0 xl:mx-20">
