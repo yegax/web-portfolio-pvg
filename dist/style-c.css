@@ -28,7 +28,7 @@ h1 {
 }
 
 .shadow-img {
-  box-shadow: 0px 2px 12px #000000;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.52)
 }
 
 .dropdown-bar {
