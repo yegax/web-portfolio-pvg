@@ -6,6 +6,7 @@
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  z-index: 30;
 }
 
 /* Hide the images by default */
@@ -51,10 +52,6 @@
   user-select: none;
   -webkit-user-select: none;
   transition: 0.5s;
-}
-
-.mt-project {
-  margin-top: -890px;
 }
 
 

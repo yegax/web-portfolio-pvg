@@ -11,6 +11,10 @@ body {
   font-weight: 700;
 }
 
+.my-1dot25{
+  margin-top: 5px;
+}
+
 .text-xxl{
   font-size: 1.7rem;
 }
@@ -154,3 +158,28 @@ h2 {
 		background-position: 200% center;
 	}
 }
+
+.message-button{
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  z-index: 50; 
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  background-color: rgb(251, 191, 36);
+  color: rgb(49, 49, 49);;
+  border-radius: 80px;
+}
+
+.fixed-img{
+  position: fixed;
+  right: 0px;
+}
+
+.ml-39{
+  margin-left: 4.5rem;
+}
+
+
+
