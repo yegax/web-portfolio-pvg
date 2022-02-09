@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://i.postimg.cc/FRjNG2RH/PVG-icon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-b.css">
     <link rel="stylesheet" href="style-c.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +21,7 @@
     <header>
         <!-- Nav Bar -->
         <nav>   
-        <div class="flex-row fixed top-0 inset-x-0 bg-gray-800 py-2.5 md:py-1 lg:py-1 px-2 shadow-lg">
+        <div class="flex-row fixed top-0 z-10 inset-x-0 bg-gray-800 py-2.5 md:py-1 lg:py-1 px-2 shadow-lg">
     
             <div class="icon-bg float-left p-28 md:p-36 lg:md:p-36 xl:md:p-36 -mt-0.5 md:mt-0.5 lg:mt-0.5 xl:mt-0.5">
             </div>
@@ -112,31 +114,13 @@
                 </div>
                 
                 <div class="opacity-0 cursor-default pointer-events-none">
-                <div>
-                    <div class="-mb-6">
-                        <p class="text-sm mx-1.5 opacity-0 relative z-10">Hi, my name is Patricio Valdes Garcia, im a front-end developer interested in web technologies with relation to business functionalities 
-                            and user experiences.
-                        </p>
-                        </div>
-
-                    <h1 class="text-xl bg-gray-800 rounded text-center shadow-md">Skills</h1>
-                    <br>
-                    <ul class="list-disc text-sm mx-9">
-                        <li>HTML</li>
-                        <li>CSS
-                            <ul class="list-disc mx-4">
-                                <li>Bootstrap, Tailwind, MaterialUI, Angular.</li>
-                            </ul>
-                        </li>
-                        <li>Javascript
-                            <ul class="list-disc mx-4">
-                                <li>Jquery, React.</li>
-                            </ul>
-                        </li>
-                        <li>Java</li>
-                        <li>etc...</li>
-                    </ul>
-                </div>
+                    <div>
+                        <div class="-mb-6">
+                            <p class="text-sm mx-1.5 opacity-0 relative z-10">Hi, my name is Patricio Valdes Garcia, im a front-end developer interested in web technologies with relation to business functionalities 
+                                and user experiences.
+                            </p>
+                            </div>
+                    </div>
     
                 <br>
     
@@ -160,17 +144,14 @@
             
         </div>
 
-        <!-- Will grow and shrink as needed taking initial size into account -->
-        
-        <div class="flex-col sm:flex-none md:flex-1 lg:flex-1 xl:flex-1 mx-auto py-0 px-5 mt-2 md:mt-2 text-white hidden md:block lg:block xl:block ">    
-            <img src="https://i.postimg.cc/hP0Q3JKd/desk-2.png" class="" alt="developer desk" style="height: 100%; width: 100%; max-width: 600px; min-width: 400px; object-fit: contain;">
-        </div>
+        <!-- Vector Image Column -->
+        <div class="flex-col sm:flex-none md:flex-1 lg:flex-1 xl:flex-1 py-0 px-5 mt-project mb-3 text-white hidden md:block lg:block xl:block ">    
+            <img src="https://i.postimg.cc/hP0Q3JKd/desk-2.png" class="opacity-0" alt="developer desk" style="height: 100%; width: 100%; max-width: 600px; min-width: 400px; object-fit: contain;">
 
-        <!--
-        <div class="flex-1 py-5 px-5 text-white">    
-            <img src="https://i.postimg.cc/6QQfKWt8/vector-1.png" alt="developer desk" style="height: 100%; width: 100%;">
+            <div class="img-fixed project-img-posit sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 ml-0  xl:-ml-28 py-0 mt-project text-white hidden md:block lg:block xl:block ">    
+                <img src="https://i.postimg.cc/hP0Q3JKd/desk-2.png" class="" alt="developer desk" style="height: 80%; width: 80%; max-width: 600px; min-width: 400px; object-fit: contain;">
+            </div>
         </div>
-        -->
 
     </div>
 
