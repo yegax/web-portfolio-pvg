@@ -165,11 +165,19 @@ h2 {
   height: 120px;
   z-index: 50; 
   position: fixed;
-  bottom: 120px;
-  right: 20px;
+  bottom: 123px;
+  right: 23px;
   background-color: rgb(251, 191, 36);
   color: rgb(49, 49, 49);;
   border-radius: 80px;
+  box-shadow: 3px 3px 16px rgba(19, 19, 19, 0.823);
+  transition: 0.5s;
+}
+.message-button:hover{
+  transform: scale(1.16); 
+  box-shadow: 3px 3px 30px rgba(19, 19, 19, 0.878);
+  transition: 0.5s;
+  background-color: rgb(255, 203, 73);
 }
 
 .fixed-img{
