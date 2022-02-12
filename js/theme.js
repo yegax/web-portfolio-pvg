@@ -8,7 +8,7 @@ $(document).ready(function(){
     var $backgroundColor = $("#body-bg");
     // Text (White/Black)
     var $textColor = $("");
-
+    var $about = $("#about-content");
 
     // Dark Mode    
     $("#dark-theme").click(function() {
@@ -27,7 +27,6 @@ $(document).ready(function(){
 
         $("#name-form, #email-form, #message-form").removeClass("font-form-dark");
         $("#name-form, #email-form, #message-form").addClass("font-form-light");
-
 
         $backgroundColor.toggleClass("gray-bg-theme");
         $mainColor.toggleClass("gray-main-theme");
