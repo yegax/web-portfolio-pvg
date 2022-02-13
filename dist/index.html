@@ -1,5 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
+
+<!--
+====================================                                   
+
+`7MM"""Mq.`7MMF'   `7MF' .g8"""bgd  
+  MM   `MM. `MA     ,V .dP'     `M  
+  MM   ,M9   VM:   ,V  dM'       `  
+  MMmmdM9     MM.  M'  MM           
+  MM          `MM A'   MM.    `7MMF'
+  MM   ,,      :MM; ,, `Mb.     MM  
+.JMML. db       VF  db   `"bmmmdPY  
+
+==================================== 
+    < PATRICIO VALDES GARCIA >
+==================================== 
+                                    
+-->
 
 <head>
     <meta charset="UTF-8">
@@ -18,11 +35,23 @@
 <body id="body-bg" class="bg-gray-900 flex flex-col h-screen">
 
     <header>
+    <!-- Delay Pointer Events for Nav Bar  -->
+    <div id="no-click" class="noclick hidden">
+        <nav>   
+            <div class="mlr-nav-block flex-row fixed top-0 z-20 inset-x-0 bg-gray-800 py-2.5 md:py-1 lg:py-1 px-2 shadow-lg">
+        
+                <div class="no-click float-left p-28 md:p-36 lg:md:p-36 xl:md:p-36 -mt-0.5 md:mt-0.5 lg:mt-0.5 xl:mt-0.5">
+                </div>
+    
+            </div>
+            </nav>
+    </div>
+
     <!-- Nav Bar -->
     <nav>   
     <div id="nav-bg" class="flex-row fixed top-0 z-20 inset-x-0 bg-gray-800 py-2.5 md:py-1 lg:py-1 px-2 shadow-lg">
 
-        <div class="icon-bg float-left p-28 md:p-36 lg:md:p-36 xl:md:p-36 -mt-0.5 md:mt-0.5 lg:mt-0.5 xl:mt-0.5">
+        <div id="icon-bg" class="icon-bg float-left p-28 md:p-36 lg:md:p-36 xl:md:p-36 -mt-0.5 md:mt-0.5 lg:mt-0.5 xl:mt-0.5">
         </div>
         
         <a class="icon-font icon-fade flex text-xl md:text-2xl bg-yellow-400 py-0 md:py-0.5 lg:py-0.5 xl:py-0.5 px-1 md:px-2.5 lg:px-3.5 xl:px-3.5 rounded dark:bg-white cursor-default">Patricio Valdes Garcia</a>
@@ -61,7 +90,7 @@
         </div>
         
         <a>
-        <button id="about-content-btn" class="bg-gray-800 hover:bg-gray-700 text-yellow-400 padding-menu px-7 -mx-1 rounded hidden md:inline-block lg:inline-block xl:inline-block"> About
+        <button id="about-content-btn" class="active-btn bg-gray-800 hover:bg-gray-700 text-yellow-400 padding-menu px-7 -mx-1 rounded hidden md:inline-block lg:inline-block xl:inline-block"> About
             <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5" fill="currentColor" class="bi bi-info-circle-fill mx-1 my-0.5 float-left" viewBox="0 0 16 16">
                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
             </svg>
@@ -104,9 +133,8 @@
         <div class="flex-col md:flex-auto sm:flex-1 pr-4.5 py-5 px-5 mx-0 sm:mx-0 md:mx-0 lg:mx-0 xl:mx-20  text-white">
             
             <!-- About -->
-            <div id="about-content">
-                <h1 class=" text-xl bg-gray-800 rounded mt-12 text-center shadow-md">About</h1>
-                <br>
+            <div id="about-content" class="mt-12">
+                <h1 id="header-content" class="mb-4 text-xl bg-gray-800 rounded text-center">About</h1>
 
                 <div class="flex"> 
                 <img src="https://i.postimg.cc/KY2VLwVP/profile-photo.png" class="shadow-img img-a flex-col" alt="developer desk" style="height: 10%; width: 10%;">
@@ -158,7 +186,7 @@
                 </a>
                 </div>
 
-                <h1 class="text-xl bg-gray-800 rounded text-center shadow-md ">Skills</h1>
+                <h1 id="header-content" class="text-xl bg-gray-800 rounded text-center shadow-md ">Skills</h1>
                 <br>
                 <ul class="list-disc text-sm mx-9 p-shadow">
                     <li>Javascript
@@ -177,7 +205,7 @@
                     <li>etc...</li>
                 </ul>
 
-                <div id="resume-dwnld" class="mt-7 bg-yellow-400 hover:bg-yellow-300 rounded visible p-1.5 mb-10 my-1 animate-bounce transition-colors transition duration-500 shadow-md relative z-20">
+                <div id="resume-dwnld" class="mt-7 bg-yellow-400 hover:bg-yellow-300 rounded visible p-1.5 mb-10 my-1 animate-bounce transition-colors transition duration-500 shadow-md relative z-0">
                     <a href="https://github.com/yegax" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-file-earmark-pdf float-left mx-1 my-0.5 " viewBox="0 0 16 16">
                         <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
@@ -194,8 +222,8 @@
             </div>
 
             <!-- Contact -->
-            <div id="contact-content" class="hidden">
-                <h1 class=" text-xl bg-gray-800 rounded text-center shadow-md mt-12 mb-4">Contact</h1>
+            <div id="contact-content" class="hidden mt-12">
+                <h1 class=" text-xl bg-gray-800 rounded text-center shadow-md mb-4">Contact</h1>
 
                 <!-- LinkedIn -->
                 <div class="bg-gray-800 hover:bg-gray-700 rounded p-1.5 transition-colors transition duration-500 shadow-md z-20 mb-4">
@@ -300,8 +328,8 @@
             </div>
 
             <!-- Projects START-->
-            <div id="project-content" class="hidden">
-                <h1 class=" text-xl bg-gray-800 rounded mt-12 text-center shadow-md mb-4">Projects</h1>
+            <div id="project-content" class="hidden mt-12">
+                <h1 class=" text-xl bg-gray-800 rounded text-center shadow-md mb-4">Projects</h1>
                 
                 <!-- Projects / Corkpad / START -->
                 <!-- Corkpad Btn-->
@@ -420,32 +448,16 @@
                         <p class="text-sm mx-1.5 opacity-0 relative z-10">Hi, my name is Patricio Valdes Garcia, im a front-end developer interested in web technologies with relation to business functionalities 
                             and user experiences.
                         </p>
-                        </div>
+                    </div>
+                </div>
                 </div>
     
-                <br>
-    
-                <div class="bg-yellow-400 hover:bg-yellow-400 rounded p-1.5 my-2 animate-bounce transition-colors transition duration-500 shadow-md">
-                    <a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-file-earmark-pdf float-left mx-1 my-0.5 " viewBox="0 0 16 16">
-                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
-                        <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
-                      </svg>
-                    <p class="font-semibold text-black text-xs p-3 pl-11">Download Resume 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-download float-right mx-0 my-0 gray-900" viewBox="0 0 16 16">
-                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                        </svg>
-                    </p>
-                    </a>
-                </div>
-                </div>
 
             </div>
 
             <!-- Projects / Corkpad START-->
-            <div id="corkpad-content" class="hidden">
-                    <h1 class="text-xl bg-gray-800 rounded mt-12 text-center shadow-md mb-1">Projects / CorkPad</h1>
+            <div id="corkpad-content" class="hidden ">
+                    <h1 class="text-xl bg-gray-800 rounded text-center shadow-md mb-1">Projects / CorkPad</h1>
                     <!-- Corkpad return btn START-->
                     <div id="project-content-return-btn">
                         <button  class="bg-gray-800 hover:bg-gray-700 rounded py-1 mb-2 px-4 my-1 transition-colors transition duration-500 shadow-md">
@@ -530,7 +542,7 @@
                 <img src="https://i.postimg.cc/hP0Q3JKd/desk-2.png" class="" alt="developer desk" style="height: 80%; width: 80%; max-width: 400px; min-width: 400px; object-fit: contain;">
             </div>
             <!-- Contact Button -->
-            <div class="message-button">
+            <div id="message-btn" class="message-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" fill="currentColor" class="bi bi-chat-dots-fill -my-1.5 -mx-1" viewBox="0 0 16 16">
                     <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                   </svg>
@@ -539,12 +551,12 @@
 
     </div>
 
-<!-- Page Footer -->
+<!-- Page Footer                                                    
+-->
 <footer>
     <br>
-    <div class="bg-gray-800 shadow-lg fixed z-40 bottom-0 inset-x-0">
-
-        <p class="opacity-25 mt-16 text-white text-xs text-center"> Powered by 
+    <div id="footer-bg" class="bg-gray-800 texy-white shadow-lg fixed z-40 bottom-0 inset-x-0">
+        <p id class="opacity-25 mt-16 text-white text-xs text-center"> Powered by 
         <a href="http://yegax.com/"><u>  Yegax Digital</u> </a> </p>
         <p class="opacity-25 text-white text-xs text-center mb-1"> 2021 </p>
     </div>
@@ -553,6 +565,8 @@
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
@@ -570,7 +584,7 @@
 
 <script src="/js/theme.js"></script>
 
-<script src="/js/dynamicWeb.js"></script>
+<script src="/js/dynamicweb.js"></script>
 
 <script src="https://combinatronics.com/yegax/web-portfolio-pvg/master/js/dropdown.js"></script>
 

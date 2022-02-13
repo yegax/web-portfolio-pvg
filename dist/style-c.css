@@ -20,15 +20,15 @@ body {
 }
 
 p {
-  text-shadow: 0px 2px 4px #000000;
+  text-shadow: 1px 1px 2px rgba(39, 39, 39, 0.398);
 }
 
 li {
-  text-shadow: 1px 1px 6px #000000;
+  text-shadow: 1px 1px 2px rgba(39, 39, 39, 0.398);
 }
 
 h1 {
-  text-shadow: 1px 1px 8px #000000;
+  text-shadow: 1px 1px 2px rgba(39, 39, 39, 0.398);
 }
 
 h2 {
@@ -69,7 +69,7 @@ h2 {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 3px;
+  display: none;
   }
   
   /* Track */
@@ -120,6 +120,7 @@ h2 {
   }
 
 .icon-bg{
+  transition: 1s;
   background-color: rgb(251, 191, 36);
   padding-top: 17px;
   padding-bottom: 19px;
@@ -129,8 +130,13 @@ h2 {
   position: relative;
   opacity: 90%;
   z-index: 9;
-
 }
+
+.icon-bg-light{
+  transition: 1s;
+  background-color: rgb(22, 128, 228);
+}
+
 
 .padding-menu{
   margin-top: 2px;
@@ -180,6 +186,13 @@ h2 {
   background-color: rgb(255, 203, 73);
 }
 
+.message-button-dark{
+  background-color: rgb(22, 128, 228);
+}
+.message-button-dark:hover{
+  background-color: rgb(22, 128, 228);
+}
+
 .fixed-img{
   position: fixed;
   right: 0px;
@@ -192,12 +205,27 @@ h2 {
 /* ----Themes / Start----- */
 
 .gray-bg-theme{
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(209, 209, 209);
   transition: 1s;
 }
 .gray-main-theme{
-  background-color: rgba(186, 186, 186, 0.809);
+  background-color: rgba(223, 223, 223, 0.974);
   transition: 1s;
+}
+.light-text-theme{
+  color: rgba(26, 31, 48, 0.761);
+}
+.light-text-btn{
+  background-color: rgba(202, 202, 202, 0.809);
+  color: rgb(22, 128, 228);
+  transition: 1s;
+}
+.light-text-btn:hover{
+  background-color: rgba(197, 197, 197, 0.659);
+  transition: 1s;
+}
+.active-btn{
+  background-color: rgba(91, 99, 111, 0.391);
 }
 
 /* ----Themes / End----- */
@@ -213,6 +241,34 @@ h2 {
   visibility: visible;
   display: block;
 }
+
+.no-click{
+  background-color: rgba(235, 60, 255, 0);
+  padding-top: 17px;
+  padding-right: 263px;
+  padding-bottom: 19px;
+  margin-right: 8.5px;
+  margin-left: -2px;
+  border-radius: 5px;
+  position: relative;
+  opacity: 90%;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.mlr-nav-block{
+  margin-left: 297px;
+  margin-right: 80px;
+  background-color: rgba(60, 255, 138, 0);
+}
+
+.noclick{
+  flex: auto;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+}
+
 
 /* ----Dynamic Web / End----- */
 
