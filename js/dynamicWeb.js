@@ -9,7 +9,7 @@ $(document).ready(function(){
     
 
     // About  
-    $("#about-content-btn").click(function() {
+    $("#about-content-btn, #about-content-btn-mob").click(function() {
 
         // Delay Pointer Events for Nav Bar
         $("#no-click").addClass("show-content").delay(560).queue(function(next){
@@ -35,7 +35,7 @@ $(document).ready(function(){
     }); 
 
     // Contact   
-    $("#contact-content-btn").click(function() {
+    $("#contact-content-btn, #contact-content-btn-mob").click(function() {
 
         $("#no-click").addClass("show-content").delay(560).queue(function(next){
             $(this).removeClass("show-content");
@@ -62,7 +62,7 @@ $(document).ready(function(){
     }); 
 
     // Projects 
-    $("#project-content-btn").click(function() {
+    $("#project-content-btn, #project-content-btn-mob").click(function() {
 
         $("#no-click").addClass("show-content").delay(560).queue(function(next){
             $(this).removeClass("show-content");
