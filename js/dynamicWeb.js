@@ -32,6 +32,7 @@ $(document).ready(function(){
 
         $about.addClass("show-content").effect("slide", { direction: "up" }, 550);
 
+        $("#dropdown-bar").toggleClass("dropdown-bar-active");
     }); 
 
     // Contact   
@@ -57,8 +58,7 @@ $(document).ready(function(){
         
         $contact.addClass("show-content").effect("slide", { direction: "up" }, 550);
 
-        
-
+        $("#dropdown-bar").toggleClass("dropdown-bar-active");
     }); 
 
     // Projects 
@@ -84,6 +84,7 @@ $(document).ready(function(){
 
         $project.addClass("show-content").effect("slide", { direction: "up" }, 550);
 
+        $("#dropdown-bar").toggleClass("dropdown-bar-active");
     }); 
 
     // Project / CorkPad  
@@ -104,7 +105,6 @@ $(document).ready(function(){
         $contact.addClass("hidden-content");
 
         $corkpad.addClass("show-content").effect("slide", { direction: "up" }, 550);
-
     }); 
 
     // Project / CorkPad / Return 

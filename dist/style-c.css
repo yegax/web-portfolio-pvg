@@ -260,7 +260,7 @@ h2 {
 }
 .light-content-contact{
   background-color: rgba(223, 223, 223, 0.974);
-  color: rgb(22, 128, 228);
+  color: rgba(26, 31, 48, 0.761);
   transition: 1s;
 }
 .light-content-contact:hover{
@@ -313,3 +313,14 @@ h2 {
 /* ----Dynamic Web / End----- */
 
 
+.section-divider{
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.234);
+  padding: 3px;
+  border-radius: 13px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     // Main Color (Orange/Purple)
-    var $mainColor = $("#nav-bg, #footer-bg, #header-content");
+    var $mainColor = $("#nav-bg, #footer-bg, #header-content, #section-divider");
     // Secondary Color (Lighter)
     var $textColor = $("#about-content, #footer-bg #footer-text, #footer-text-hl");
     // Background Color (Darker)    
