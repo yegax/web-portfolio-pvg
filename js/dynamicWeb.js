@@ -32,7 +32,7 @@ $(document).ready(function(){
 
         $about.addClass("show-content").effect("slide", { direction: "up" }, 550);
 
-        $("#dropdown-bar").toggleClass("dropdown-bar-active");
+        $("#dropdown-bar").removeClass("dropdown-bar-active");
     }); 
 
     // Contact   
@@ -58,7 +58,7 @@ $(document).ready(function(){
         
         $contact.addClass("show-content").effect("slide", { direction: "up" }, 550);
 
-        $("#dropdown-bar").toggleClass("dropdown-bar-active");
+        $("#dropdown-bar").removeClass("dropdown-bar-active");
     }); 
 
     // Projects 
@@ -84,7 +84,7 @@ $(document).ready(function(){
 
         $project.addClass("show-content").effect("slide", { direction: "up" }, 550);
 
-        $("#dropdown-bar").toggleClass("dropdown-bar-active");
+        $("#dropdown-bar").removeClass("dropdown-bar-active");
     }); 
 
     // Project / CorkPad  
