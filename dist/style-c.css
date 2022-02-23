@@ -232,6 +232,7 @@ h2 {
 }
 .gray-main-theme{
   background-color: rgba(223, 223, 223, 0.974);
+  color: rgba(26, 31, 48, 0.761);
   transition: 1s;
 }
 .gray-main-btn-mob{

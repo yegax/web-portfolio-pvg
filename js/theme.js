@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
     // Main Color (Orange/Purple)
-    var $mainColor = $("#nav-bg, #footer-bg, #header-content, #section-divider");
+    var $mainColor = $("#nav-bg, #footer-bg, #header-content, #section-divider, #project-corkpad-content-header, #project-content-about, #caption-container-bg");
     // Secondary Color (Lighter)
-    var $textColor = $("#about-content, #footer-bg #footer-text, #footer-text-hl");
+    var $textColor = $("#about-content, #footer-bg #footer-text, #footer-text-hl, #corkpad-content-text, #caption");
     // Background Color (Darker)    
     var $backgroundColor = $("#body-bg");
     // Background Color (Darker)    
@@ -25,8 +25,11 @@ $(document).ready(function(){
     // Background Color (Darker)    
     var $buttonsMob = $("#about-content-btn-mob, #contact-content-btn-mob, #project-content-btn-mob, #light-theme-mob");
     // Background Color (Darker)    
-    var $contactColor = $("#contact-content-header, #contact-content-linkedin, #contact-content-email, #contact-content-phone, #contact-content-git, #camviewer-btn, #yegax-btn, #csscom-btn, #kampa-btn, #osos-btn, #music-btn, #osos2-btn, #corkpad-content-btn, #project-content-header");
-  
+    var $contactColor = $("#contact-content-header, #contact-content-linkedin, #contact-content-email, #contact-content-phone, #contact-content-git, #camviewer-btn, #yegax-btn, #csscom-btn, #kampa-btn, #osos-btn, #music-btn, #osos2-btn, #corkpad-content-btn, #project-content-header, #project-corkpad-return-btn, #project-corkpad-content-return-btn, #corkpad-livedemo-btn, #corkpad-github-btn");
+    // Background Color (Darker)    
+    var $galleryButtons = $("#prevbutton, #nextbutton");
+    
+   
 
     // Light Mode    
     $("#light-theme, #light-theme-mob").click(function() {
@@ -43,6 +46,7 @@ $(document).ready(function(){
         $backdropMobL.toggleClass("show-content");
         $buttonsMob.toggleClass("gray-main-btn-mob");
         $contactColor.toggleClass("light-content-contact");
+        $galleryButtons.toggleClass("gallery-light-buttons");
     });
     
 });

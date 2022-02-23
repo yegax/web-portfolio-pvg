@@ -108,7 +108,7 @@ $(document).ready(function(){
     }); 
 
     // Project / CorkPad / Return 
-    $("#project-content-return-btn").click(function() {
+    $("#project-corkpad-content-return-btn").click(function() {
 
         $("#no-click").addClass("show-content").delay(560).queue(function(next){
             $(this).removeClass("show-content");

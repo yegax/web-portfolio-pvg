@@ -112,3 +112,7 @@
   max-width: 50x;
   min-width: 10px;
 }
+
+.gallery-light-buttons{
+  color: rgba(31, 41, 55, 1);
+}

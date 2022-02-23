@@ -472,19 +472,19 @@
 
             <!-- Projects / Corkpad START-->
             <div id="corkpad-content" class="hidden relative">
-                    <h1 class="text-xl bg-gray-800 rounded text-center shadow-md mt-12 mb-1">Projects / CorkPad</h1>
+                    <h1 id="project-corkpad-content-header" class="text-xl bg-gray-800 rounded text-center shadow-md mt-12 mb-1">Projects / CorkPad</h1>
                     <!-- Corkpad return btn START-->
-                    <div id="project-content-return-btn">
-                        <button  class="bg-gray-800 hover:bg-gray-700 rounded py-1 mb-2 px-4 my-1 transition-colors transition duration-500 shadow-md">
+                    <div>
+                        <button id="project-corkpad-content-return-btn"  class="bg-gray-800 hover:bg-gray-700 rounded py-1 mb-2 px-4 my-1 transition-colors transition duration-500 shadow-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-return-left mt-1 float-left" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
                             </svg>
-                            <p class="text-md text-white p-0 pl-7">Return</p>
+                            <p class="text-md p-0 pl-7">Return</p>
                         </button>
                      </div>
     
-                    <div class="">
-                        <h1 class="text-l bg-gray-800 rounded text-center shadow-md">About</h1> 
+                    <div id="corkpad-content-text" class="">
+                        <h1 id="project-content-about" class="text-l bg-gray-800 rounded text-center shadow-md">About</h1> 
                         <p class=" text-2xl p-3 font-extrabold">CorkPad</p>
                         <p class="font-mono text-sm mx-3">CorkPad is a note processing desktop enviroment that provides you with multiple tools to boost your productivity and time efficency. . </p>
         
@@ -504,8 +504,7 @@
                     </div>
     
                     <div>
-                        <a href="https://yegax.github.io/CorkPad/public/index.html" target="_blank">
-                        <div class="bg-gray-800 hover:bg-gray-700 rounded p-1 my-2 transition-colors transition duration-500 shadow-md">
+                        <div id="corkpad-livedemo-btn" class="cursor-pointer bg-gray-800 hover:bg-gray-700 rounded p-1 my-2 transition-colors transition duration-500 shadow-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-folder2 float-left mx-1" viewBox="0 0 16 16">
                                 <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
                             </svg>
@@ -515,14 +514,12 @@
                             </svg>
                             <p class=" text-sm p-3 pl-14">CorkPad Live Demo</p>
                         </div>
-                        </a>
                     </div>
             
                         
-                    <div>
-                        <a href="https://github.com/yegax/CorkPad" target="_blank">
-                        <div class="bg-gray-800 hover:bg-gray-700 rounded p-1 my-2 transition-colors transition duration-500 shadow-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="white" class="bi bi-github float-left mx-1 my-0.5" viewBox="0 0 16 16">
+                    <div> 
+                        <div id="corkpad-github-btn" class="bg-gray-800 hover:bg-gray-700 rounded p-1 my-2 transition-colors transition duration-500 shadow-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-github float-left mx-1 my-0.5" viewBox="0 0 16 16">
                                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-in-right float-right mx-2 my-2 opacity-90" viewBox="0 0 16 16">
@@ -531,7 +528,6 @@
                             </svg>
                             <p class=" text-sm p-3 pl-14">Github Repository</p>
                         </div>
-                        </a>
                     </div> 
 
                     <!-- Gallery -->
@@ -540,62 +536,62 @@
                         <!-- Full-width images with number text -->
                         <div class="mySlides">
                         <div class="numbertext">1 / 6</div>
-                        <img src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%">
+                        <img src="https://i.postimg.cc/hjbF3Bkz/corkpad-2.jpg" style="width:100%">
                     </div>
                   
                     <div class="mySlides">
                       <div class="numbertext">2 / 6</div>
-                        <img class="" src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%">
+                        <img class="" src="https://i.postimg.cc/ydKXn4hb/corkpad-2.jpg" style="width:100%">
                     </div>
                   
                     <div class="mySlides">
                       <div class="numbertext">3 / 6</div>
-                        <img src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%">
+                        <img src="https://i.postimg.cc/L4wk01VP/corkpad-2.jpg" style="width:100%">
                     </div>
                   
                     <div class="mySlides">
                       <div class="numbertext">4 / 6</div>
-                        <img src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%">
+                        <img src="https://i.postimg.cc/KjyVnH4G/corkpad-2.jpg" style="width:100%">
                     </div>
                   
                     <div class="mySlides">
                       <div class="numbertext">5 / 6</div>
-                        <img src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%">
+                        <img src="https://i.postimg.cc/ZKjYQNGc/corkpad-2.jpg" style="width:100%">
                     </div>
                   
                     <div class="mySlides">
                       <div class="numbertext">6 / 6</div>
-                        <img src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%">
+                        <img src="https://i.postimg.cc/bwTzd1CS/prototypecorkpad.jpg" style="width:100%">
                     </div>
                   
                     <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a id="prevbutton" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a id="nextbutton" class="next" onclick="plusSlides(1)">&#10095;</a>
                   
                     <!-- Image text -->
-                    <div class="caption-container">
+                    <div id="caption-container-bg" class="caption-container">
                       <p id="caption"></p>
                     </div>
                   
                     <!-- Thumbnail images -->
                     <div class="row">
                       <div class="column">
-                        <img class="demo cursor" src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                        <img class="demo cursor" src="https://i.postimg.cc/hjbF3Bkz/corkpad-2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Corkpad Default Look">
                       </div>
                       <div class="column">
-                        <img class="demo cursor" src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%" onclick="currentSlide(2)" alt="UI Mockup Design">
+                        <img class="demo cursor" src="https://i.postimg.cc/ydKXn4hb/corkpad-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Corkpad Dark Mode - Feedback Screen">
                       </div>
                       <div class="column">
-                        <img class="demo cursor" src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        <img class="demo cursor" src="https://i.postimg.cc/L4wk01VP/corkpad-2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Corkpad Background Customization Menu">
                       </div>
                       <div class="column">
-                        <img class="demo cursor" src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                        <img class="demo cursor" src="https://i.postimg.cc/KjyVnH4G/corkpad-2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Corkpad Background Customization Menu">
                       </div>
                        <div class="column">
-                        <img class="demo cursor" src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                        <img class="demo cursor" src="https://i.postimg.cc/ZKjYQNGc/corkpad-2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Corkpad Dark Mode">
                       </div>
                       <div class="column">
-                        <img class="demo cursor" src="https://i.postimg.cc/hj3g8M4J/corkpad-2.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                        <img class="demo cursor" src="https://i.postimg.cc/bwTzd1CS/prototypecorkpad.jpg" style="width:100%" onclick="currentSlide(6)" alt="Corkpad UI Prototype">
                       </div>
                     </div>
     
@@ -650,9 +646,9 @@
 <footer>
     <br>
     <div id="footer-bg" class="bg-gray-800 texy-white shadow-lg fixed z-40 bottom-0 inset-x-0">
-        <p id="footer-text" class="opacity-10 mt-11 text-white text-xs text-center"> Powered by 
+        <p id="footer-text" class="opacity-30 mt-11 text-white text-xs text-center"> Powered by 
         <a  href="http://yegax.com/"><u>  Yegax Digital</u> </a> </p>
-        <p id="footer-text-hl" class="opacity-10 text-white text-xs text-center mb-1"> 2021 </p>
+        <p id="footer-text-hl" class="opacity-30 text-white text-xs text-center mb-1"> 2021 </p>
     </div>
 </footer> 
 
@@ -675,15 +671,7 @@
 <script src="https://combinatronics.com/yegax/web-portfolio-pvg/DynamicWeb/js/gallery.js"></script>
 
 <!--
-<script src="/js/dropdown.js"></script>
-
-<script src="/js/theme.js"></script>
-
-<script src="/js/dynamicWeb.js"></script>
--->
-
-
-<script src="https://combinatronics.com/yegax/web-portfolio-pvg/DynamicWeb/js/dynamicWeb.js"></script>
+    <script src="https://combinatronics.com/yegax/web-portfolio-pvg/DynamicWeb/js/dynamicWeb.js"></script>
 
 
 <script src="https://combinatronics.com/yegax/web-portfolio-pvg/DynamicWeb/js/dropdown.js"></script>
@@ -691,5 +679,13 @@
 
 <script src="https://combinatronics.com/yegax/web-portfolio-pvg/DynamicWeb/js/theme.js"></script>
 
+-->
+
+
+<script src="/js/dropdown.js"></script>
+
+<script src="/js/theme.js"></script>
+
+<script src="/js/dynamicWeb.js"></script>
 </body>
 </html>
