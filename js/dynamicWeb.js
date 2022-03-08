@@ -17,8 +17,13 @@ $(document).ready(function(){
             next();
         });
 
+        $("#content-content-btn").removeClass("active-btn");
         $("#project-content-btn").removeClass("active-btn");
-        $("#contact-content-btn").removeClass("active-btn");
+
+        $("#contact-content-btn").addClass("glass-nav-btn");
+        $("#project-content-btn").addClass("glass-nav-btn");
+
+        $("#about-content-btn").removeClass("glass-nav-btn");
         $("#about-content-btn").addClass("active-btn");
 
         $corkpad.removeClass("show-content");
@@ -45,6 +50,11 @@ $(document).ready(function(){
 
         $("#about-content-btn").removeClass("active-btn");
         $("#project-content-btn").removeClass("active-btn");
+
+        $("#about-content-btn").addClass("glass-nav-btn");
+        $("#project-content-btn").addClass("glass-nav-btn");
+
+        $("#contact-content-btn").removeClass("glass-nav-btn");
         $("#contact-content-btn").addClass("active-btn");
 
         $corkpad.removeClass("show-content");
@@ -71,6 +81,16 @@ $(document).ready(function(){
 
         $("#about-content-btn").removeClass("active-btn");
         $("#contact-content-btn").removeClass("active-btn");
+        $("#project-content-btn").addClass("active-btn");
+
+
+        $("#about-content-btn").removeClass("active-btn");
+        $("#contact-content-btn").removeClass("active-btn");
+
+        $("#about-content-btn").addClass("glass-nav-btn");
+        $("#contact-content-btn").addClass("glass-nav-btn");
+
+        $("#project-content-btn").removeClass("glass-nav-btn");
         $("#project-content-btn").addClass("active-btn");
 
         $corkpad.removeClass("show-content");
