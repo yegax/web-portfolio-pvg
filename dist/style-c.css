@@ -74,7 +74,6 @@ h2 {
 
 .dropdown-bar {
     position: absolute;
-    z-index: 1px;
     transition: 1s;
     background-color: rgba(17, 24, 39, 0.85);
     position: fixed;
@@ -83,7 +82,7 @@ h2 {
     opacity: 0%;
     right: 0;
     top: 53px;
-    z-index: 20;
+    z-index: 40;
     display: none;
  
 }
@@ -206,12 +205,12 @@ h2 {
 .message-button{
   padding: 27px;
   cursor: pointer;
-  width: 235px;
+  width: 335px;
   height: 135px;
   z-index: 30; 
   position: fixed;
-  top: 50px;
-  right: -108px;
+  top: 55px;
+  right: -208px;
   background-color: rgb(64, 0, 128);
   color: rgba(255, 255, 255, 0.8);
   border-radius: 100px;
@@ -219,9 +218,9 @@ h2 {
   transition: 0.5s;
 }
 .message-button:hover{
-  top: 50px;
-  right: -80px;
-  transition: 0.5s;
+  top: 55px;
+  right: -160px;
+  transition: 1s;
 }
 
 .message-button-dark{
@@ -360,7 +359,7 @@ h2 {
 .glass-btns{
   background-color: rgba(255, 255, 255, 0.083);
   transition: 0.5s;
-  z-index: 20;
+  z-index: 10;
   position: relative;
   cursor: pointer;
   border-radius: 10px;
@@ -375,7 +374,7 @@ transition: 0.7s;
 .glass-btns-allow{
   background-color: rgba(255, 255, 255, 0.083);
   transition: 0.5s;
-  z-index: 20;
+  z-index: 30;
   position: relative;
   cursor: pointer;
   border-radius: 10px;
@@ -396,7 +395,7 @@ transition: 0.7s;
   .glass-btns-lock{
     background-color: rgba(255, 255, 255, 0.083);
     transition: 0.5s;
-    z-index: 20;
+    z-index: 30;
     position: relative;
     cursor: pointer;
     border-radius: 10px;
@@ -413,3 +412,31 @@ transition: 0.7s;
     border-radius: 10px;
     transform: scale(1.05);
     }
+.home-arrow{
+  cursor: pointer;
+  margin-top: 430px;
+  z-index: 20; 
+  position: fixed;
+  left: 25%;
+  inset: 1;
+  opacity: 74%;
+  background-color: rgba(114, 4, 223, 0);
+  transition: 0.5s;
+}
+.home-arrow:hover{
+  transform: scale(1.1); 
+  transition: 0.5s;
+}
+.title-formatting{
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.748);
+  font-family: 'Abril Fatface', cursive;
+  text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.576);
+  font-size: 80px;
+  position:fixed;
+  font-weight: 200;
+  inset: 0;
+  top: 130px;
+  margin-right: 400px;
+  text-align: center;
+}

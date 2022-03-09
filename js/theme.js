@@ -9,7 +9,7 @@ $(document).ready(function(){
     // Background Color (Darker)    
     var $backgroundColorMob = $("#dropdown-bar");
     // Background Color (Darker) 
-    var $buttonColor = $("#about-content-btn, #light-theme, #contact-content-btn, #project-content-btn");
+    var $buttonColor = $("#home-content-btn, #about-content-btn, #light-theme, #contact-content-btn, #project-content-btn");
     // Background Color (Darker)    
     var $iconColor = $("#icon-bg, #resume-dwnld, #dropdown-btn");
     // Background Color (Darker)    

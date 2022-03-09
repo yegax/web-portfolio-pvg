@@ -29,23 +29,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">   
-    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@800&display=swap" rel="stylesheet">        
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@800&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">      
     <title>About - Patricio Valdes Garcia</title>
 </head>
 
 <body id="body-bg" oncontextmenu="false" class="bg-black flex flex-col h-screen" >
 
     <header>
+ <!-- Mobile Dropdown Menu -->
+ <div id="dropdown-bar" class="dropdown-bar">
+
+    <div>
+    <h1 id="home-content-btn-mob" class="opacity-80 text-xl bg-gray-800 hover:bg-gray-700  text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">             
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle-fill inline-block -mr-1.5 -mt-1" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </svg> Home
+    </h1>
+    </div>
+    
+    <div>
+    <h1 id="about-content-btn-mob" class="opacity-80 text-xl bg-gray-800 hover:bg-gray-700  text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">             
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle-fill inline-block -mr-1.5 -mt-1" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </svg> About
+    </h1>
+    </div>
+
+    <div >
+    <h1 id="contact-content-btn-mob" class="opacity-80  text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chat-square-dots-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg> Contact</h1>
+    </div>
+
+    <div>
+        <h1 id="project-content-btn-mob" class="opacity-80  text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-archive-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
+            <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+        </svg> Projects</h1>
+    </div>
+
+    <div id="section-divider" class="section-divider bg-gray-800">
+    </div>
+
+    <div class="">
+        <h1  id="light-theme-mob" class="opacity-80  text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-sun-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg> Mode</h1>
+    </div>
+
+</div>
+
     <!-- Delay Pointer Events for Nav Bar  -->
     <div id="no-click" class="noclick hidden">
         <nav>   
             <div class="mlr-nav-block flex-row fixed top-0 z-20 inset-x-0 bg-gray-800 py-2.5 md:py-1 lg:py-1 px-2 shadow-lg">
-        
-                <div class="no-click float-left p-28 md:p-36 lg:md:p-36 xl:md:p-36 -mt-0.5 md:mt-0.5 lg:mt-0.5 xl:mt-0.5">
-                </div>
-    
+                <div class="no-click float-left p-28 md:p-36 lg:md:p-36 xl:md:p-36 -mt-0.5 md:mt-0.5 lg:mt-0.5 xl:mt-0.5"> </div>
             </div>
-            </nav>
+        </nav>
     </div>
                 <!-- Backdrop Mobile -->
                 <div class="absolute z-0 block md:hidden lg:hidden  xl:hidden right-0">    
@@ -71,45 +116,16 @@
               </svg>
         </a>
 
-        <!-- Mobile Dropdown Menu -->
-        <div id="dropdown-bar" class="dropdown-bar">
-
-            <div>
-            <h1 id="about-content-btn-mob" class="opacity-80 text-xl bg-gray-800 hover:bg-gray-700  text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">             
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle-fill inline-block -mr-1.5 -mt-1" viewBox="0 0 16 16">
-                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                </svg> About
-            </h1>
-            </div>
-
-            <div >
-            <h1 id="contact-content-btn-mob" class="opacity-80  text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chat-square-dots-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
-                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                </svg> Contact</h1>
-            </div>
-
-            <div>
-                <h1 id="project-content-btn-mob" class="opacity-80  text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-archive-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
-                    <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
-                </svg> Projects</h1>
-            </div>
-
-            <div id="section-divider" class="section-divider bg-gray-800">
-            </div>
-
-            <div class="">
-                <h1  id="light-theme-mob" class="opacity-80  text-xl bg-gray-800 hover:bg-gray-700 text-yellow-400 rounded text-center py-2 mt-3 shadow-md mx-2 cursor-pointer transition-colors transition duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-sun-fill inline-block -mr-1.5 -mt-0.5" viewBox="0 0 16 16">
-                    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                </svg> Mode</h1>
-            </div>
-    
-        </div>
-        
         <a>
-        <button id="about-content-btn" class="active-btn  text-yellow-400 padding-menu px-7 -mx-1 rounded hidden md:inline-block lg:inline-block xl:inline-block"> About
+        <button style="margin-left: 0.2px; margin-right: 2px;" id="home-content-btn" class="active-btn text-yellow-400 padding-menu px-7 -mx-1 rounded hidden md:inline-block lg:inline-block xl:inline-block"> Home
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5" fill="currentColor" class="bi bi-info-circle-fill mx-1 my-0.5 float-left" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </svg>
+        </button>
+        </a>
+
+        <a>
+        <button id="about-content-btn" class="glass-nav-btn text-yellow-400 padding-menu px-7 -mx-1 rounded hidden md:inline-block lg:inline-block xl:inline-block"> About
             <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5" fill="currentColor" class="bi bi-info-circle-fill mx-1 my-0.5 float-left" viewBox="0 0 16 16">
                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
             </svg>
@@ -117,7 +133,7 @@
         </a>
         
         <a>                                                                                                                                                 
-        <button id="light-theme" class=" padding-menu px-5 rounded float-right text-yellow-400 transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block"> 
+        <button id="light-theme" class="glass-nav-btn padding-menu px-5 rounded float-right text-yellow-400 transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block"> 
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
                 <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
             </svg>
@@ -126,7 +142,7 @@
 
         
         <a>
-        <button id="contact-content-btn" class="glass-nav-btn text-yellow-400 padding-menu px-5 rounded transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block">Contact 
+        <button id="contact-content-btn" class="glass-nav-btn text-yellow-400 padding-menu mx-0.5 px-5 rounded transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block">Contact 
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-chat-square-dots-fill float-left mx-1 my-1dot25" viewBox="0 0 16 16">
                 <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
             </svg>
@@ -135,7 +151,7 @@
         </a>
 
         <a>
-        <button id="project-content-btn" href="#projects" class=" text-yellow-400 padding-menu px-5 -mx-1.5 rounded transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block">Projects 
+        <button id="project-content-btn" href="#projects" class="-ml-1 glass-nav-btn text-yellow-400 padding-menu px-5 rounded transition-colors transition duration-500 hidden md:inline-block lg:inline-block xl:inline-block">Projects 
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-archive-fill float-left mx-1 my-1" viewBox="0 0 16 16">
                 <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
             </svg>
@@ -149,10 +165,10 @@
 
 <main>
 
-            <!-- Background -->
-            <div class="z-0 mt-12 opacity-100 absolute inset-x-0 hidden md:block lg:block xl:block ">    
-                <img src="https://i.postimg.cc/tCWcNr12/GRAINY-HUE-GRADIENT.png" class="opacity-80" alt="image backdrop" style="height: 120%; width: 120%; object-fit:fill;">
-            </div>
+    <!-- Background -->
+        <div class="z-0 -mt-2 opacity-70 fixed inset-x-0 hidden md:block lg:block xl:block">    
+            <img src="https://i.postimg.cc/tCWcNr12/GRAINY-HUE-GRADIENT.png" alt="image backdrop" style="height: 120%; width: 120%; object-fit:fill;">
+        </div>
 
     <!-- Page Content -->
     <div class="flex mb-12">
@@ -160,8 +176,19 @@
         <!-- Sections -->
         <div class="flex-col md:flex-auto sm:flex-1 pr-4.5 py-5 px-5 mx-0 sm:mx-0 md:mx-0 lg:mx-0 xl:mx-20  text-white">
            
+            <!-- Home -->
+            <div id="home-content" class="show-content mt-12 relative">
+                <p class="title-formatting"> <b>Patricio<br> Valdes Garcia <br> </b>  Full-Stack Dev </p>
+                <div id="home-arrow-btn" class="home-arrow ml-0 sm:ml-10 md:ml-10 lg:ml-0 xl:ml-15">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </div>
+
+            </div>
+
             <!-- About -->
-            <div id="about-content" class="mt-12 relative">
+            <div id="about-content" class="hidden mt-12 relative">
                 <h1 id="header-content" class="mb-4 glass-bg text-center">About</h1>
 
                 <div class="flex"> 
@@ -628,12 +655,12 @@
             </div>
 
             <!-- Vector Desk - Light Theme  -->
-            <div class="z-30 absolute img-fixed top-52 mb-5 py-0  ml-44  xl:ml-40 hidden md:block lg:block xl:block ">    
+            <div class="z-30 absolute img-fixed top-52 mb-5 py-0  ml-44  xl:ml-32 hidden md:block lg:block xl:block ">    
                 <img src="https://i.postimg.cc/CMmngR6b/desk-2-light.png" class="" alt="developer desk" style="height: 80%; width: 80%; max-width: 400px; min-width: 400px; object-fit: contain;">
             </div>
 
             <!-- Vector Desk -->
-            <div id="desk-img" class="z-30 absolute img-fixed top-52 mb-5 py-0  ml-44  xl:ml-40 hidden md:block lg:block xl:block ">    
+            <div id="desk-img" class="z-30 absolute img-fixed top-52 mb-5 py-0  ml-44  xl:ml-32 hidden md:block lg:block xl:block ">    
                 <img src="https://i.postimg.cc/hP0Q3JKd/desk-2.png" alt="developer desk" style="height: 80%; width: 80%; max-width: 400px; min-width: 400px; object-fit: contain;">
             </div>
             
