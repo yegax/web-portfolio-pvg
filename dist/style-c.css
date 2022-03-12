@@ -37,9 +37,19 @@ body {
 .desk-light{
   opacity: 0%;
 }
+.desk-dark{
+  opacity: 100%;
+}
+.bg-opacity-light{
+  opacity: 0%;
+}
+.bg-opacity-dark{
+  opacity: 80%;
+}
 
 .icon-font {
-  font-family: 'Turret Road', cursive;
+  font-size: 25.6px;
+  font-family: 'Abril Fatface', cursive;
   font-weight: 700;
 }
 
@@ -52,7 +62,7 @@ body {
 }
 
 p {
-  text-shadow: 1px 1px 2px rgba(39, 39, 39, 0.398);
+  text-shadow: 1px 1px 2px rgba(39, 39, 39, 0.344);
 }
 
 li {
@@ -154,46 +164,55 @@ h2 {
 
 .icon-bg{
   transition: 1s;
+  margin-top: -20px;
   background-color: rgb(251, 190, 36);
-  padding-top: 17px;
+  padding-top: 40px;
   padding-bottom: 19px;
   margin-right: 8.5px;
-  margin-left: -2px;
-  border-radius: 5px;
+  margin-left: -1px;
+  border-radius: 14px;
   position: relative;
   opacity: 90%;
   z-index: 9;
 }
 
 .icon-bg-dark{
-  transition: 1s;
+  transition: 0.5s;
   color: rgb(255, 255, 255);
   background-color: rgba(119, 0, 255, 0.426);
   backdrop-filter: blur(2px);
 }
+.icon-bg-dark:hover{
+  background-color: rgba(176, 39, 255, 0.426);
+  transform: scale(1.3); 
+  transition: 0.8s;
+}
 
 .icon-bg-light{
   transition: 1s;
-  background-color: rgba(22, 128, 228, 0.707);
+  background-color: rgba(22, 128, 228, 0.426);
+  backdrop-filter: blur(2px);
+}
+.icon-bg-light-b{
+  transition: 1s;
+  background-color: rgb(22, 128, 228);
+}
+.icon-bg-light:hover{
+  background-color: rgba(64, 160, 250, 0.426);
+  transform: scale(1.3); 
+  transition: 0.8s;
 }
 
-.padding-menu{
-  margin-top: 2px;
-  margin-bottom: 1px;
-  padding-top: 6.2px;
-  padding-bottom: 7.2px;
-}
 .icon-fade{
 	color: #fff;
   position: absolute;
   margin-top: 3px;
   z-index: 10;
 	font-weight: 800;
-	background: linear-gradient(to right,rgb(147, 199, 255) 10%, #003e74 40%, rgb(40, 144, 255) 50%);
+	background: linear-gradient(to right,rgb(197, 147, 255) 10%, #43006a 40%, rgb(112, 51, 182) 50%);
 	background-size: auto auto;
 	background-clip: border-box;
 	background-size: 200% auto;
-
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		animation: textclip 6.8s linear infinite;
@@ -202,6 +221,20 @@ h2 {
 	to {
 		background-position: 200% center;
 	}
+}
+.icon-fade-light{
+  color: #fff;
+  position: absolute;
+  margin-top: 3px;
+  z-index: 10;
+	font-weight: 800;
+  background: linear-gradient(to right,rgb(202, 221, 180) 10%, #d7ff97cd 40%, rgb(135, 194, 16) 50%);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip 6.8s linear infinite;
 }
 
 .message-button{
@@ -213,7 +246,8 @@ h2 {
   position: fixed;
   top: 55px;
   right: -208px;
-  background-color: rgb(64, 0, 128);
+  background-color: rgba(119, 0, 255, 0.426);
+  backdrop-filter: blur(2px);
   color: rgba(255, 255, 255, 0.8);
   border-radius: 100px;
   box-shadow: 3px 3px 16px rgba(19, 19, 19, 0.823);
@@ -252,7 +286,7 @@ h2 {
 /* ----Themes / Start----- */
 
 .gray-bg-theme{
-  background-color: rgb(213, 213, 213);
+  background-color: rgb(197, 197, 197);
   transition: 1s;
 }
 
@@ -275,7 +309,7 @@ h2 {
   transition: 1s;
 }
 .light-text-theme{
-  color: rgba(26, 31, 48, 0.761);
+  color: rgba(26, 31, 48, 0.816);
 }
 .light-text-btn{
   color: rgb(22, 128, 228);
@@ -283,7 +317,13 @@ h2 {
 }
 
 .active-btn{
-  background-color: rgba(119, 119, 119, 0.364);
+  background-color: rgba(131, 131, 131, 0.254);
+  border-radius: 14px;
+  transition: 0.4s;
+}
+.active-btn:hover{
+  transform: translate(0px, 7px);
+  transition: 0.8s;
 }
 .light-content-contact{
   color: rgba(18, 21, 33, 0.761);
@@ -329,7 +369,7 @@ h2 {
   flex: auto;
   position: fixed;
   top: 0;
-  z-index: 30;
+  z-index: 50;
 }
 
 
@@ -347,13 +387,20 @@ h2 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
+.padding-menu{
+  margin-top: -51px;
+  margin-bottom: 1px;
+  padding-top: 60px;
+  padding-bottom: 7.2px;
+}
 .glass-nav-btn{
-  transition: 0.5s;
+  transition: 0.4s;
+  border-radius: 14px;
   background-color: rgba(255, 255, 255, 0);
 }
 .glass-nav-btn:hover{
-  transition: 0.5s;
+  transform: translate(0px, 6px);
+  transition: 0.8s;
   background-color: rgba(130, 130, 130, 0.193);
 }
 .glass-nav{
@@ -365,8 +412,11 @@ h2 {
   backdrop-filter: blur(3px);
 }
 .glass-bg{
+  font-family: 'Abril Fatface', cursive;
   background-color: rgba(255, 255, 255, 0.124);
-  font-size: 23px;
+  font-size: 27px;
+  font-weight: lighter;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.083);
   border-radius: 10px;
   backdrop-filter: blur(5px);
 }
@@ -374,6 +424,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0.083);
   transition: 0.5s;
   z-index:30;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.083);
   position: relative;
   cursor: pointer;
   border-radius: 10px;
@@ -388,6 +439,7 @@ transition: 0.7s;
 .glass-btns-allow{
   background-color: rgba(255, 255, 255, 0.083);
   transition: 0.5s;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.083);
   z-index: 30;
   position: relative;
   cursor: pointer;
@@ -409,6 +461,7 @@ transition: 0.7s;
   .glass-btns-lock{
     background-color: rgba(255, 255, 255, 0.083);
     transition: 0.5s;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.083);
     z-index: 30;
     position: relative;
     cursor: pointer;
@@ -443,14 +496,14 @@ transition: 0.7s;
 }
 .title-formatting{
   z-index: 0;
-  color: rgba(255, 255, 255, 0.748);
+  opacity: 86%;
   font-family: 'Abril Fatface', cursive;
-  text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.576);
-  font-size: 80px;
+  text-shadow: 0px 0px 10px rgba(43, 43, 43, 0.644);
+  font-size: 89px;
   position:fixed;
   font-weight: 200;
   inset: 0;
-  top: 130px;
+  top: 170px;
   margin-right: 400px;
   text-align: center;
 }
@@ -474,4 +527,33 @@ transition: 0.7s;
   50% {opacity: 60%;}
   75% {opacity: 80%;}
   100% {opacity: 100%;}
+}
+h6{
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Abril Fatface', cursive;
+  font-size: 58px;
+  writing-mode: vertical-rl;
+  position:fixed;
+  inset: 0;
+  margin-right: 4px;
+  text-align: center;
+}
+.separating-line{
+  background-color: rgba(220, 220, 220, 0.774);
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+  transition: 0.7s;
+  z-index: 0;
+  height: 3px;
+  border-radius: 8px;
+  margin-left: 80px;
+  opacity: 87%;
+  position:fixed;
+  inset: 0;
+  top: 160px;
+  margin-right: 490px;
+  text-align: center;
+}
+.separator-line-dark{
+  background-color: rgba(28, 28, 28, 0.774);
 }

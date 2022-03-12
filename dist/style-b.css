@@ -6,7 +6,7 @@
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
-  z-index: 10;
+  z-index: 30;
 }
 
 /* Hide the images by default */
