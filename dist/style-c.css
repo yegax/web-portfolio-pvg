@@ -48,7 +48,6 @@ body {
 }
 
 .icon-font {
-  font-size: 25.6px;
   font-family: 'Abril Fatface', cursive;
   font-weight: 700;
 }
@@ -164,7 +163,7 @@ h2 {
 
 .icon-bg{
   transition: 1s;
-  margin-top: -20px;
+  margin-top: -27px;
   background-color: rgb(251, 190, 36);
   padding-top: 40px;
   padding-bottom: 19px;
@@ -174,34 +173,48 @@ h2 {
   position: relative;
   opacity: 90%;
   z-index: 9;
+  border-width: 3px;
+  border-style: outset;
+  border-color: rgba(251, 190, 36, 0.6);
 }
 
 .icon-bg-dark{
   transition: 0.5s;
   color: rgb(255, 255, 255);
-  background-color: rgba(119, 0, 255, 0.426);
-  backdrop-filter: blur(2px);
+  background-color: rgba(119, 0, 255, 0.344);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-width: 2px;
+  border-style: outset;
+  border-color: rgba(142, 44, 255, 0.153);
 }
 .icon-bg-dark:hover{
   background-color: rgba(176, 39, 255, 0.426);
+  border-color: rgba(142, 44, 255, 0.153);
   transform: scale(1.3); 
   transition: 0.8s;
 }
 
 .icon-bg-light{
   transition: 1s;
-  background-color: rgba(22, 128, 228, 0.426);
-  backdrop-filter: blur(2px);
+  background-color: rgba(22, 128, 228, 0.385);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .icon-bg-light-b{
   transition: 1s;
   background-color: rgb(22, 128, 228);
+  border-width: 3px;
+  border-style: outset;
+  border-color: rgba(30, 146, 255, 0.6);
 }
 .icon-bg-light:hover{
   background-color: rgba(64, 160, 250, 0.426);
   transform: scale(1.3); 
   transition: 0.8s;
 }
+
+
 
 .icon-fade{
 	color: #fff;
@@ -239,39 +252,53 @@ h2 {
 
 .message-button{
   padding: 27px;
-  cursor: pointer;
-  width: 335px;
+  width: 600px;
   height: 135px;
   z-index: 30; 
   position: fixed;
   top: 55px;
-  right: -208px;
+  right: -460px;
   background-color: rgba(119, 0, 255, 0.426);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   color: rgba(255, 255, 255, 0.8);
   border-radius: 100px;
   box-shadow: 3px 3px 16px rgba(19, 19, 19, 0.823);
   transition: 0.6s;
+  border-width: 2px;
+  border-style: outset;
+  border-color: rgba(142, 44, 255, 0.093);
 }
 @keyframes messageanimB {
   0% {
-    right: -150px;
+    right: -460px;
   }
 	50% {
-		right: -170px;
+		right: -440px;
+  }
+	100% {
+		right: -460px;
   }
 }
 .message-button:hover{
+  transition: 0.8s;
+
+  animation: 1.15s messageanimB 0.2s linear infinite;
+}
+.message-button-active{
   transition: 0.6s;
-  right: -150px;
-  animation: 0.8s messageanimB 0.6s linear infinite;
+  transform: translate(-300px);
+}
+
+.message-button-active:hover{
+  animation-play-state: paused;
 }
 
 .message-button-dark{
-  background-color: rgb(22, 128, 228);
+  background-color: rgba(22, 128, 228, 0.830);
 }
 .message-button-dark:hover{
-  background-color: rgb(22, 128, 228);
+  background-color: rgba(22, 128, 228, 0.730);
 }
 
 .fixed-img{
@@ -286,7 +313,7 @@ h2 {
 /* ----Themes / Start----- */
 
 .gray-bg-theme{
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(199, 199, 199);
   transition: 1s;
 }
 
@@ -405,30 +432,38 @@ h2 {
 }
 .glass-nav{
   background-color: rgba(255, 255, 255, 0.117);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(7px);
 }
 .glass-nav-a{
   background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(7px);
 }
 .glass-bg{
   font-family: 'Abril Fatface', cursive;
   background-color: rgba(255, 255, 255, 0.124);
   font-size: 27px;
   font-weight: lighter;
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.083);
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.120);
+  text-shadow: 1px 0px 10px rgba(0, 0, 0, 0.342);
   border-radius: 10px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-width: 2px;
+  border-style: outset;
+  border-color: rgba(140, 140, 140, 0.078);
 }
 .glass-btns{
   background-color: rgba(255, 255, 255, 0.083);
   transition: 0.5s;
   z-index:30;
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.083);
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.120);
   position: relative;
   cursor: pointer;
   border-radius: 10px;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 .glass-btns:hover{
 background-color: rgba(255, 255, 255, 0.145);
@@ -439,15 +474,20 @@ transition: 0.7s;
 .glass-btns-allow{
   background-color: rgba(255, 255, 255, 0.083);
   transition: 0.5s;
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.083);
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.120);
   z-index: 30;
   position: relative;
   cursor: pointer;
   border-radius: 10px;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-width: 2px;
+  border-style: outset;
+  border-color: rgba(140, 140, 140, 0.078);
 }
 .glass-btns-allow:hover{
 background-color: rgba(255, 255, 255, 0.145);
+border-color: rgba(255, 255, 255, 0.08);
 transform: scale(1.05);
 transition: 0.7s;
 }
@@ -461,15 +501,20 @@ transition: 0.7s;
   .glass-btns-lock{
     background-color: rgba(255, 255, 255, 0.083);
     transition: 0.5s;
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.083);
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.120);
     z-index: 30;
     position: relative;
     cursor: pointer;
     border-radius: 10px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-width: 2px;
+    border-style: outset;
+    border-color: rgba(140, 140, 140, 0.078);
   }
   .glass-btns-lock:hover{
   background-color: rgba(255, 255, 255, 0.145);
+  border-color: rgba(255, 255, 255, 0.08);
   transform: scale(1.05);
   transition: 0.7s;
   }
@@ -557,3 +602,4 @@ h6{
 .separator-line-dark{
   background-color: rgba(28, 28, 28, 0.774);
 }
+
