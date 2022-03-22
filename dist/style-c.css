@@ -180,12 +180,9 @@ h2 {
 .icon-bg-dark{
   transition: 0.5s;
   color: rgb(255, 255, 255);
-  background-color: rgba(119, 0, 255, 0.344);
+  background-color: rgb(119, 0, 255);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-width: 2px;
-  border-style: outset;
-  border-color: rgba(142, 44, 255, 0.153);
+  border-color: rgba(142, 44, 255, 0.6);
 }
 .icon-bg-dark:hover{
   background-color: rgba(176, 39, 255, 0.426);
