@@ -616,6 +616,9 @@ h6{
   text-align: center;
 }
 .separator-line-dark{
-  background-color: rgba(28, 28, 28, 0.774);
+ color: rgba(28, 28, 28, 0.774);
+}
+.home-title-dark{
+  color: rgba(28, 28, 28, 0.774);
 }
 

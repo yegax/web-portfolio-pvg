@@ -39,7 +39,9 @@ $(document).ready(function(){
     // Background Color (Darker)    
     var $backgroundImageLight = $("#bg-img-full-light"); 
     // Background Color (Darker)    
-    var $separatorLine = $("#home-name-line, #home-name-line-b, #home-name-line-c, #home-name-text-a, #home-name-text-b");
+    var $separatorLine = $("#home-name-line, #home-name-line-b, #home-name-line-c");
+    //sdsd
+    var $homeTitle = $("#home-name-text-a, #home-name-text-b, #home-name-text-c");
     
     
    
@@ -58,6 +60,7 @@ $(document).ready(function(){
         $iconBG.toggleClass("icon-bg-light-b");
 
         $separatorLine.toggleClass("separator-line-dark");
+        $homeTitle.toggleClass("home-title-dark");
 
         $deskimg.toggleClass("desk-light");
         $deskimgLight.toggleClass("desk-dark");
