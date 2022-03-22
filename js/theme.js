@@ -39,7 +39,7 @@ $(document).ready(function(){
     // Background Color (Darker)    
     var $backgroundImageLight = $("#bg-img-full-light"); 
     // Background Color (Darker)    
-    var $separatorLine = $("#home-name-line, #home-name-line-b, #home-name-line-c");
+    var $separatorLine = $("#home-name-line, #home-name-line-b, #home-name-line-c, #home-name-text-a, #home-name-text-b");
     
     
    
