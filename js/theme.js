@@ -29,7 +29,7 @@ $(document).ready(function(){
     // Background Color (Darker)    
     var $backdropMobL = $("#backdrop-img-mob-light");
     // Background Color (Darker)    
-    var $buttonsMob = $("#about-content-btn-mob, #contact-content-btn-mob, #project-content-btn-mob, #light-theme-mob");
+    var $buttonsMob = $("#home-content-btn-mob, #about-content-btn-mob, #contact-content-btn-mob, #project-content-btn-mob, #light-theme-mob");
     // Background Color (Darker)    
     var $contactColor = $("#contact-content-header, #contact-content-linkedin, #contact-content-email, #contact-content-phone, #contact-content-git, #camviewer-btn, #yegax-btn, #csscom-btn, #kampa-btn, #osos-btn, #music-btn, #osos2-btn, #corkpad-content-btn, #project-content-header, #project-corkpad-return-btn, #project-corkpad-content-return-btn, #corkpad-livedemo-btn, #corkpad-github-btn");
     // Background Color (Darker)    
