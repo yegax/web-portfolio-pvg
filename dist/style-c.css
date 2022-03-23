@@ -332,7 +332,8 @@ h2 {
   transition: 1s;
 }
 .light-text-theme{
-  color: rgba(26, 31, 48, 0.816);
+  color: rgba(26, 31, 48, 0.88);
+  font-weight: 800;
 }
 .light-text-btn{
   color: rgb(22, 128, 228);
@@ -340,7 +341,7 @@ h2 {
 }
 
 .active-btn{
-  background-color: rgba(131, 131, 131, 0.254);
+  background-color: rgba(131, 131, 131, 0.3);
   border-radius: 14px;
   transition: 0.4s;
 }
@@ -509,7 +510,7 @@ transition: 0.7s;
 
 .glass-btns-allow:active{
   background-color: rgba(0, 255, 0, 0.145);
-  transition: 0.2s;
+  transition: 0s;
   border-radius: 10px;
   transform: scale(1.05);
   }
@@ -536,7 +537,7 @@ transition: 0.7s;
   }
   .glass-btns-lock:active{
     background-color: rgba(255, 0, 0, 0.145);
-    transition: 0.2s;
+    transition: 0s;
     border-radius: 10px;
     transform: scale(1.05);
     }
@@ -616,7 +617,7 @@ h6{
   text-align: center;
 }
 .separator-line-dark{
- color: rgba(28, 28, 28, 0.774);
+ background-color: rgba(28, 28, 28, 0.774);
 }
 .home-title-dark{
   color: rgba(28, 28, 28, 0.774);
