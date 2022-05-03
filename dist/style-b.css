@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+img {
+  pointer-events: none;
+}
+
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
