@@ -11,6 +11,8 @@ user-select: none;
 -ms-user-select: none;
 }
 
+
+
 body {
     font-family: 'IBM Plex Mono', monospace;
     -webkit-user-select: none;
@@ -252,7 +254,7 @@ h2 {
   height: 135px;
   z-index: 30; 
   position: fixed;
-  top: 55px;
+  top: 68px;
   right: -460px;
   background-color: rgba(119, 0, 255, 0.426);
   backdrop-filter: blur(12px);
@@ -278,12 +280,15 @@ h2 {
 }
 .message-button:hover{
   transition: 0.8s;
-
   animation: 1.15s messageanimB 0.2s linear infinite;
 }
 .message-button-active{
   transition: 0.6s;
-  transform: translate(-300px);
+  transform: translate(-355px);
+}
+.message-button-unactive{
+  transition: 0.6s;
+  transform: translate(-55px);
 }
 
 .message-button-active:hover{
@@ -291,11 +296,54 @@ h2 {
 }
 
 .message-button-dark{
-  background-color: rgba(22, 128, 228, 0.830);
+  background-color: rgba(22, 128, 228, 0.930);
+  border-color: rgba(0, 145, 255, 0.093);
 }
 .message-button-dark:hover{
-  background-color: rgba(22, 128, 228, 0.730);
+  background-color: rgba(22, 128, 228, 0.930);
 }
+
+
+
+.font-form-dark{
+  background-color: rgba(21, 21, 21, 0.526);
+  border-radius: 2px;
+  color: rgba(225, 225, 225, 0.624);
+  border-color: rgba(155, 155, 155, 0.124);
+}
+
+.form-submit-slide-default{
+  color: rgb(230, 230, 230);
+  background-color: rgba(35, 107, 202, 0);
+  border-radius: 8px;
+}
+.form-submit-slide{
+  padding: 40px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 rgba(82, 255, 67, 0.261);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+
+}
+.form-submit-left:active {
+  box-shadow: inset 400px 0 0 0 rgb(45, 181, 32);
+}
+.form-submit-dark{
+  color: rgba(28, 34, 46, 0.946);
+  background-color: rgb(255, 210, 63);
+}
+.form-submit-dark:hover {
+  background-color: rgb(255, 232, 141);
+}
+
+
+
+
 
 .fixed-img{
   position: fixed;

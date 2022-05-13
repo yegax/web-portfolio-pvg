@@ -17,7 +17,7 @@ $(document).ready(function(){
         // Background Color (Darker)    
         var $iconBG = $("#icon-bg");
     // Background Color (Darker)    
-    var $messageColor = $("#message-btn");
+    var $messageColor = $("#message-btn, #msg-btn");
     // Background Color (Darker)    
     var $backdrop = $("#backdrop-img");
     // Background Color (Darker)    
