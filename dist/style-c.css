@@ -252,7 +252,7 @@ h2 {
   padding: 27px;
   width: 600px;
   height: 135px;
-  z-index: 30; 
+  z-index: 80; 
   position: fixed;
   top: 68px;
   right: -460px;
@@ -286,10 +286,6 @@ h2 {
   transition: 0.6s;
   transform: translate(-355px);
 }
-.message-button-unactive{
-  transition: 0.6s;
-  transform: translate(-55px);
-}
 
 .message-button-active:hover{
   animation-play-state: paused;
@@ -306,8 +302,9 @@ h2 {
 
 
 .font-form-dark{
-  background-color: rgba(21, 21, 21, 0.526);
-  border-radius: 2px;
+  background-color: rgba(21, 21, 21, 0.338);
+  border-radius: 4px;
+  padding: 1.2px;
   color: rgba(225, 225, 225, 0.624);
   border-color: rgba(155, 155, 155, 0.124);
 }
