@@ -252,7 +252,7 @@ h2 {
   padding: 27px;
   width: 600px;
   height: 143px;
-  z-index: 0; 
+  z-index: 10; 
   position: fixed;
   top: 68px;
   right: -460px;
